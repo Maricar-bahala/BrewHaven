@@ -1,0 +1,18 @@
+
+<svg width="200" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A0522D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Coffee cup icon -->
+  <path d="M15 35 Q15 45 25 45 L35 45 Q45 45 45 35 L45 20 L15 20 Z" fill="url(#logoGradient)"/>
+  <path d="M45 25 Q55 25 55 35 Q55 40 50 40 L45 40" fill="none" stroke="#8B4513" stroke-width="2"/>
+  <rect x="17" y="15" width="26" height="3" fill="#D2B48C"/>
+  
+  <!-- Text -->
+  <text x="70" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="url(#logoGradient)">MILTON'S</text>
+  <text x="70" y="50" font-family="Arial, sans-serif" font-size="10" fill="#8B4513">PREMIUM COFFEE</text>
+</svg>

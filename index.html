@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewHaven Coffee - Premium Coffee Experience</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/brewhaven_logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="about.html">About</a></li>
+<li><button id="open-register-modal" class="btn-register-nav">Sign Up</button></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content modal-two-column">
+            <span class="close" id="close-login-modal">&times;</span>
+            <div class="modal-left">
+                <img src="images/coffee-beans-bg.svg" alt="Coffee Beans" class="modal-image" />
+                <div class="welcome-message">
+                    <h2>Welcome Back!</h2>
+                    <p>Enjoy your favorite coffee with us. Please sign in to continue.</p>
+                    <button id="switch-to-register" class="btn-secondary">Sign Up</button>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h2>Sign In</h2>
+                <form id="login-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="modal-email">Email Address</label>
+                        <input type="email" id="modal-email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-password">Password</label>
+                        <input type="password" id="modal-password" name="password" placeholder="Enter your password" required />
+                    </div>
+                    <button type="submit" class="btn-primary">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content modal-two-column">
+            <span class="close" id="close-register-modal">&times;</span>
+            <div class="modal-left">
+                <img src="images/coffee-beans-bg.svg" alt="Coffee Beans" class="modal-image" />
+                <div class="welcome-message">
+                    <h2>Welcome to Coffee Shop</h2>
+                    <p>Get a wide range of specialty coffee, tea, and beverages. Join us today!</p>
+                    <button id="switch-to-login" class="btn-secondary">Sign In</button>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h2>Sign Up</h2>
+                <form id="register-form" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="modal-reg-email">Email Address</label>
+                        <input type="email" id="modal-reg-email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-password">Password</label>
+                        <input type="password" id="modal-reg-password" name="password" placeholder="Enter your password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="modal-reg-password-confirm">Confirm Password</label>
+                        <input type="password" id="modal-reg-password-confirm" name="password_confirm" placeholder="Confirm your password" required />
+                    </div>
+                    <button type="submit" class="btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-with-image">
+                    <div class="hero-text">
+                        <p>IT'S BREAK</p>
+                        <p>WITH</p>
+                        <p><strong>COFFEE</strong></p>
+                        <p><strong>COFFEE</strong></p>
+                        <p><strong>COFFEE</strong></p>
+                        <p>COFFEE</p>
+                        <p>COFFEE</p>
+                        <p>COFFEE</p>
+                    </div>
+                    <div class="coffee-cup">
+                        <img src="images/coffeeimage.png" alt="Coffee Cup">
+                        <div class="hero-buttons">
+<button id="get-started-btn" class="btn-primary">Get Started</button>
+                            <button id="hero-login-btn" class="btn-secondary">Login</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="coffee-beans"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab active">COFFEE</button>
+                <button class="tab">ICE TEA</button>
+                <button class="tab">BEVERAGE</button>
+                <button class="tab">SIDES</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="coffee-process">
+                    <div class="process-item">
+                        <img src="images/coffee-process-1.svg" alt="Coffee Beans">
+                        <p>Select Beans</p>
+                    </div>
+                    <div class="process-item">
+                        <img src="images/coffee-process-2.svg" alt="Coffee Grinder">
+                        <p>Grind</p>
+                    </div>
+                    <div class="process-item">
+                        <img src="images/coffee-process-3.svg" alt="Coffee Brewing">
+                        <p>Brew</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h2>BREWHAVEN CHOICE COFFEE</h2>
+                    <p>Exceptional coffee, also known as the Holy is grind of coffee made from coffee beans that have been rated 80 points or above on a 100-point scale by a certified coffee taster or by a licensed Q Grader. This special classification can be obtained for our own preference.</p>
+                    <div class="buttons">
+                        <button class="btn-primary">BUY IT NOW</button>
+                        <button class="btn-secondary">VIEW RANGE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2>The Best Taste<br>From The Process</h2>
+                <p class="features-description">
+                    Coffee goes from cherry on a tree to cup in three steps: pick &amp; process the fruit, roast the beans for flavor, and brew the grounds for that perfect cup.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card dark-brown">
+                    <img src="images/hand_roast.jpg" alt="Hand Roasted Icon" class="feature-icon-img" />
+                    <h3>Hand Roasted</h3>
+                </div>
+                <div class="feature-card light-brown">
+                    <img src="images/line-icon-handshake.webp" alt="Direct Trade Icon" class="feature-icon-img" />
+                    <h3>Direct Trade</h3>
+                </div>
+                <div class="feature-card dark-brown">
+                    <img src="images/coffee.jpg" alt="Organic Taste Icon" class="feature-icon-img" />
+                    <h3>Organic Taste</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Flavors -->
+    <section class="popular-flavors" id="menu">
+        <div class="container">
+            <h2>OUR POPULAR FLAVORS</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/cold_brew.jpg" alt="Cold Brew Coffee">
+                    <h3>Cold Brew Coffee</h3>
+                    <p class="price">₱ 90</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/espresso-coffee-recipe022.webp" alt="Hot Espresso">
+                    <h3>Hot Espresso</h3>
+                    <p class="price">₱ 85</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/Iced_americano.jpg" alt="Iced Americano">
+                    <h3>Iced Americano</h3>
+                    <p class="price">₱ 95</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p class="price">₱ 100</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section class="offers" id="deals">
+        <div class="container">
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h2>Get New Updates And Recent Offers</h2>
+                    <p>Subscribe and get notify about our latest promos, new menu, and special offers.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="btn-subscribe">Subscribe</button>
+                    </div>
+                </div>
+                <div class="offer-image">
+                    <img src="images/coffee_beans.jpg" alt="Coffee Offer">
+                    <div class="coffee-beans-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Brewhaven.logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                    </a>
+                </div>
+                <p>Quick New Drink Hot Menu Popular and easy to use and of course at a relatively low price.</p>
+            </div>
+                <div class="footer-section">
+                    <h4>Page</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacts</h4>
+                    <p>Side A-Upper Talusan, Balingasag, Misamis Oriental, Philippines</p>
+                    <p>+639392344230</p>
+                    <p>contact@brewhavencoffee.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy;  2025 BREWHAVEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="homepage-buttons.js"></script>
+</body>
+</html>

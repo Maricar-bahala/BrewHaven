@@ -1,0 +1,10 @@
+
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="beans" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <ellipse cx="10" cy="10" rx="3" ry="6" fill="#8B4513" opacity="0.1"/>
+      <ellipse cx="10" cy="10" rx="1" ry="6" fill="#654321" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect width="100" height="100" fill="url(#beans)"/>
+</svg>

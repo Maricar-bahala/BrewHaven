@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Miltons Coffee</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/brewhaven_logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Discover our carefully crafted coffee selections and delicious treats</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="tab active" data-category="coffee">COFFEE</button>
+                <button class="tab" data-category="tea">ICE TEA</button>
+                <button class="tab" data-category="beverage">BEVERAGE</button>
+                <button class="tab" data-category="sides">SIDES</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Menu -->
+    <section class="menu-section" id="coffee">
+        <div class="container">
+            <h2>Coffee Selection</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/classic_espresso.jpg" alt="Espresso">
+                    <div class="menu-item-info">
+                        <h3>Classic Espresso</h3>
+                        <p>Rich and bold single shot of premium coffee</p>
+                        <span class="price">₱ 75</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/americano_coffee.jpg" alt="Americano">
+                    <div class="menu-item-info">
+                        <h3>Americano</h3>
+                        <p>Smooth espresso with hot water</p>
+                        <span class="price">₱ 85</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/cappuccino.jpg" alt="Cappuccino">
+                    <div class="menu-item-info">
+                        <h3>Cappuccino</h3>
+                        <p>Perfect balance of espresso, steamed milk, and foam</p>
+                        <span class="price">₱ 100</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Caffe_Latte.jpg" alt="Latte">
+                    <div class="menu-item-info">
+                        <h3>Caffe Latte</h3>
+                        <p>Smooth espresso with steamed milk and light foam</p>
+                        <span class="price">₱ 110</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/caffee-mocha.jpg" alt="Mocha">
+                    <div class="menu-item-info">
+                        <h3>Caffe Mocha</h3>
+                        <p>Rich chocolate and espresso with steamed milk</p>
+                        <span class="price">₱ 120</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/caramel_macho.jpg" alt="Macchiato">
+                    <div class="menu-item-info">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Vanilla syrup, steamed milk, espresso, and caramel</p>
+                        <span class="price">₱ 125</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tea Menu -->
+    <section class="menu-section hidden" id="tea">
+        <div class="container">
+            <h2>Ice Tea Collection</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/lemon_ice_tea.jpg" alt="Lemon Ice Tea">
+                    <div class="menu-item-info">
+                        <h3>Lemon Ice Tea</h3>
+                        <p>Refreshing black tea with fresh lemon</p>
+                        <span class="price">₱ 65</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/green_ice_tea.jpg" alt="Green Ice Tea">
+                    <div class="menu-item-info">
+                        <h3>Green Ice Tea</h3>
+                        <p>Antioxidant-rich green tea served cold</p>
+                        <span class="price">₱ 70</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/peach_ice_tea.jpg" alt="Peach Ice Tea">
+                    <div class="menu-item-info">
+                        <h3>Peach Ice Tea</h3>
+                        <p>Sweet peach flavor with black tea</p>
+                        <span class="price">₱ 75</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/very-berry-tea-with-mint-1.webp" alt="Berry Ice Tea">
+                    <div class="menu-item-info">
+                        <h3>Mixed Berry Tea</h3>
+                        <p>Blend of strawberry, blueberry, and raspberry</p>
+                        <span class="price">₱ 80</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beverage Menu -->
+    <section class="menu-section hidden" id="beverage">
+        <div class="container">
+            <h2>Other Beverages</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/hot_chocolate.jpg" alt="Hot Chocolate">
+                    <div class="menu-item-info">
+                        <h3>Hot Chocolate</h3>
+                        <p>Rich and creamy chocolate drink</p>
+                        <span class="price">₱ 90</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Mango-Smoothie.jpg" alt="Fruit Smoothie">
+                    <div class="menu-item-info">
+                        <h3>Mango Smoothie</h3>
+                        <p>Fresh mango blended with yogurt</p>
+                        <span class="price">₱ 95</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/matcha_latte.jpg" alt="Matcha Latte">
+                    <div class="menu-item-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Japanese green tea powder with steamed milk</p>
+                        <span class="price">₱ 115</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/vanilla-milkshake.webp" alt="Vanilla Milkshake">
+                    <div class="menu-item-info">
+                        <h3>Vanilla Milkshake</h3>
+                        <p>Creamy vanilla ice cream shake</p>
+                        <span class="price">₱ 105</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sides Menu -->
+    <section class="menu-section hidden" id="sides">
+        <div class="container">
+            <h2>Sides & Pastries</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="images/butter_croissants-.jpg" alt="Croissant">
+                    <div class="menu-item-info">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky and buttery French pastry</p>
+                        <span class="price">₱ 45</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/blueberry-muffins.jpg" alt="Blueberry Muffin">
+                    <div class="menu-item-info">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Fresh blueberries in soft, sweet muffin</p>
+                        <span class="price">₱ 55</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/Chocolate-Chip-Cookies.jpg" alt="Chocolate Chip Cookie">
+                    <div class="menu-item-info">
+                        <h3>Chocolate Chip Cookie</h3>
+                        <p>Freshly baked with premium chocolate chips</p>
+                        <span class="price">₱ 35</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="images/club_sandwich.jpg" alt="Club Sandwich">
+                    <div class="menu-item-info">
+                        <h3>Club Sandwich</h3>
+                        <p>Ham, cheese, lettuce, and tomato on toast</p>
+                        <span class="price">₱ 85</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/Brewhaven.logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                    </a>
+                </div>
+                    <p>Quick New Drink Hot Menu Popular and easy to use and of course at a relatively low price.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Page</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacts</h4>
+                    <p>Side A-Upper Talusan, Balingasag, Misamis Oriental, Philippines</p>
+                    <p>+639392344230</p>
+                    <p>contact@brewhavencoffee.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BREWHAVEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

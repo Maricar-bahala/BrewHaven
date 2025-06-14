@@ -1,0 +1,20 @@
+
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="35" fill="#F5F5DC" stroke="#8B4513" stroke-width="2"/>
+  
+  <!-- Grinder body -->
+  <rect x="25" y="30" width="30" height="25" fill="#8B4513" rx="3"/>
+  <rect x="27" y="32" width="26" height="21" fill="#A0522D" rx="2"/>
+  
+  <!-- Grinder top -->
+  <circle cx="40" cy="25" r="10" fill="#654321"/>
+  <circle cx="40" cy="25" r="7" fill="#8B4513"/>
+  
+  <!-- Handle -->
+  <rect x="50" y="23" width="8" height="4" fill="#D2B48C" rx="2"/>
+  
+  <!-- Ground coffee -->
+  <ellipse cx="35" cy="60" rx="3" ry="1" fill="#8B4513"/>
+  <ellipse cx="42" cy="62" rx="2" ry="1" fill="#A0522D"/>
+  <ellipse cx="38" cy="65" rx="2" ry="1" fill="#654321"/>
+</svg>

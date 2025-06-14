@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites - BrewHaven Coffee</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/brewhaven_logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="deals.html">Deals</a></li>
+                    <li><a href="favorites.html" class="active">Favorites</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="cart-icon">
+                        <a href="cart.html">🛒 <span id="cart-count">0</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Favorites Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Customer Favorites</h1>
+            <p>The most loved drinks and treats by our community</p>
+        </div>
+    </section>
+
+    <!-- Top Picks -->
+    <section class="top-picks">
+        <div class="container">
+            <h2>Top 3 Customer Picks</h2>
+            <div class="podium">
+                <div class="podium-item second">
+                    <div class="rank">2</div>
+                    <img src="images/cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>Classic favorite with perfect foam</p>
+                    <span class="price">₱ 100</span>
+                    <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="podium-item first">
+                    <div class="rank crown">👑</div>
+                    <img src="images/Caramel-macchiato.jpg" alt="Caramel Macchiato">
+                    <h3>Caramel Macchiato</h3>
+                    <p>The ultimate crowd-pleaser</p>
+                    <span class="price">₱ 125</span>
+                    <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="podium-item third">
+                    <div class="rank">3</div>
+                    <img src="images/Caffe_Latte.jpg" alt="Latte">
+                    <h3>Caffe Latte</h3>
+                    <p>Smooth and creamy delight</p>
+                    <span class="price">₱ 110</span>
+                    <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="favorites-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All Favorites</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="cold">Cold Drinks</button>
+                <button class="filter-btn" data-filter="sweet">Sweet Treats</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Favorites Grid -->
+    <section class="favorites-grid-section">
+        <div class="container">
+            <div class="favorites-grid">
+                <!-- Coffee Favorites -->
+                <div class="favorite-item" data-category="coffee">
+                    <div class="favorite-badge">Hot Pick 🔥</div>
+                    <img src="images/caffee-mocha.jpg" alt="Caffe Mocha">
+                    <div class="favorite-info">
+                        <h3>Caffe Mocha</h3>
+                        <p>Rich chocolate meets bold espresso</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.6/5)</div>
+                        <span class="price">₱ 120</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="favorite-item" data-category="coffee">
+                    <div class="favorite-badge">Classic ☕</div>
+                    <img src="images/americano.jpg" alt="Americano">
+                    <div class="favorite-info">
+                        <h3>Americano</h3>
+                        <p>Pure coffee experience</p>
+                        <div class="rating">⭐⭐⭐⭐ (4.4/5)</div>
+                        <span class="price">₱ 85</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cold Drink Favorites -->
+                <div class="favorite-item" data-category="cold">
+                    <div class="favorite-badge">Refreshing ❄️</div>
+                    <img src="images/iced_caramel_coffee.jpg" alt="Iced Coffee">
+                    <div class="favorite-info">
+                        <h3>Iced Caramel Coffee</h3>
+                        <p>Perfect summer refresher</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                        <span class="price">₱ 95</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="favorite-item" data-category="cold">
+                    <div class="favorite-badge">Popular 💙</div>
+                    <img src="images/lemon_ice_tea.jpg" alt="Iced Green Tea">
+                    <div class="favorite-info">
+                        <h3>Iced Green Tea</h3>
+                        <p>Healthy and refreshing choice</p>
+                        <div class="rating">⭐⭐⭐⭐ (4.3/5)</div>
+                        <span class="price">₱ 70</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Sweet Treats -->
+                <div class="favorite-item" data-category="sweet">
+                    <div class="favorite-badge">Sweet 🍯</div>
+                    <img src="images/Chocolate-Chip-Muffins.jpg" alt="Chocolate Muffin">
+                    <div class="favorite-info">
+                        <h3>Chocolate Chip Muffin</h3>
+                        <p>Freshly baked daily</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.7/5)</div>
+                        <span class="price">₱ 55</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="favorite-item" data-category="sweet">
+                    <div class="favorite-badge">Indulgent 🍰</div>
+                    <img src="images/new_york_cheesecake.jpg" alt="Cheesecake">
+                    <div class="favorite-info">
+                        <h3>New York Cheesecake</h3>
+                        <p>Rich and creamy perfection</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.9/5)</div>
+                        <span class="price">₱ 85</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="favorite-item" data-category="coffee">
+                    <div class="favorite-badge">Trending 📈</div>
+                    <img src="images/matcha_latte.jpg" alt="Matcha Latte">
+                    <div class="favorite-info">
+                        <h3>Matcha Latte</h3>
+                        <p>Instagram-worthy green goodness</p>
+                        <div class="rating">⭐⭐⭐⭐ (4.5/5)</div>
+                        <span class="price">₱ 115</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="favorite-item" data-category="sweet">
+                    <div class="favorite-badge">Limited 🔥</div>
+                    <img src="images/tiramisu.jpg" alt="Tiramisu">
+                    <div class="favorite-info">
+                        <h3>Tiramisu</h3>
+                        <p>Italian classic with coffee twist</p>
+                        <div class="rating">⭐⭐⭐⭐⭐ (4.8/5)</div>
+                        <span class="price">₱ 95</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="customer-avatar">👤</div>
+                        <div class="customer-info">
+                            <h4>Maria Santos</h4>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"The Caramel Macchiato is absolutely divine! I come here every morning for my daily dose."</p>
+                    <span class="review-date">2 days ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="customer-avatar">👨</div>
+                        <div class="customer-info">
+                            <h4>John Rivera</h4>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"Best coffee in town! The atmosphere is perfect for studying and the staff is incredibly friendly."</p>
+                    <span class="review-date">5 days ago</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="customer-avatar">👩</div>
+                        <div class="customer-info">
+                            <h4>Anna Cruz</h4>
+                            <div class="rating">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                    <p>"Their pastries are fresh and delicious. The chocolate chip muffins are my weakness!"</p>
+                    <span class="review-date">1 week ago</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/Brewhaven.logo.png" alt="BREWHAVEN Logo" class="logo-image" />
+                        </a>
+                    </div>
+                    <p>Quick New Drink Hot Menu Popular and easy to use and of course at a relatively low price.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Page</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="deals.html">Deals</a></li>
+                        <li><a href="favorites.html">Favorites</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacts</h4>
+                    <p>Side A-Upper Talusan, Balingasag, Misamis Oriental, Philippines</p>
+                    <p>+639392344230</p>
+                    <p>contact@brewhavencoffee.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BREWHAVEN. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="favorites.js"></script>
+</body>
+</html>
